@@ -1,0 +1,82 @@
+@import "vars";
+
+@media(max-width:1000px) {
+  p{
+    font-size: 13px;
+    line-height:22px;
+  }
+  a, input, textarea {
+    font-size: 13px;
+  }
+  button{
+    margin-bottom: 30px;
+  }
+  h2, h3 ,h4 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .grid-item-gray, .grid-item-blue, .grid-item-orange,.grid-item-black, .grid-item-man, .grid-item-road {
+    padding: 40px 30px;
+  }
+  .grid-item-blue>div{
+    margin-bottom: 67px;
+  }
+  .grid-item-man {
+    min-height: inherit;
+  }
+  .grid-item-road {
+    min-height: inherit;
+  }
+  .logo{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+  }
+}
+
+@media(max-width:700px) {
+  .grid{
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+  }
+  h2{
+    text-align: center;
+  }
+  .span{
+    display: initial;
+  }
+  .grid-item-man>div{
+    width: 100%;
+  }
+  .grid-item-orange{
+    text-align: center;
+  }
+  .grid-item-man{
+    text-align: center;
+    justify-content:center;
+  }
+  .grid-item-road{
+    text-align: center;
+    &>div{
+      width:100%;
+    }
+  }
+  a{
+    margin: 0 auto;
+  }
+  .logo{
+    margin: 0 auto 25px;
+  }
+  .list{
+    justify-content: center;
+  }
+}
+@media(max-width:560px) {
+  .form input {
+    width: calc(55% - 30px);
+  }
+}
+@media(max-width:350px) {
+  .form input {
+    width: calc(60% - 30px);
+  }
+}
